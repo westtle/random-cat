@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+* {
+	color: rgb(0, 0, 0, 0.9);
+	box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(#cce9aa, #cadbb7);
+	height: 100vh;
+	margin: 0;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* Header */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #93a368;
+	height: 70px;
+	box-shadow: 0 1px 3px;
+}
+
+header h2 {
+	color: white;
+	margin: 0;
+	text-shadow: 1px 2px 6px black;
+	filter: invert(10%);
+}
+
+.header__icon {
+	display: flex;
+	align-items: center;
+	opacity: 0.9;
+	text-decoration: none;
+}
+
+.header__icon img {
+	width: 70px;
+	filter: invert(5%);
+}
+
+.header__randomizer {
+	display: flex;
+	align-items: center;
+	padding: 0 12px;
+	margin: 8px 26px;
+	opacity: 0.7;
+	cursor: pointer;
+	transition: 0.2s;
+	transition-property: opacity;
+}
+
+.header__randomizer:hover {
+	opacity: 0.9;
+}
+
+/* Main */
+
+main {
+	max-width: 480px;
+	padding: 8px;
+	margin: 5vh auto;
+}
+
+main h4 {
+	margin: 12px 0 0 0;
+}
+
+#container__facts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fcfbfc;
+	border-radius: 2px;
+	height: 380px;
+	padding: 12px;
+	box-shadow: inset 0px 1px 8px rgba(0,0,0,0.6);
+	overflow-y: auto;
+}
+
+.facts--cat-image {
+	width: 280px;
+	height: 187px;
+	margin-bottom: 10px;
+}
+
+.facts--cat-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.facts--cat {
+	border-top: 1px solid rgb(0, 0, 0, 0.3);
+	width: 100%;
+	padding: 4px 12px;
+}
+
+/* Footer */
+
+footer {
+	position: sticky;
+	top: 100%;
+	background-color: #93a368;
+	padding: 5px;
+	box-shadow: 0 -1px 3px;
+	text-align: center;
+}
+
+/* Extra */
+
+#bottom-hr {
+	position: absolute;
+	top: -18px;
+	left: 0;
+	right: 0;
+}
+
+@media (max-width: 380px) {
+	header,
+	main,
+	footer {
+		font-size: 12px;
+	}
+
+	.header__icon img {
+		width: 63px;
+	}
+
+	.facts--cat-image {
+		width: 200px;
+		height: 187px;
+		margin-bottom: 12px;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #777; 
+}
